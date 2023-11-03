@@ -1,3 +1,5 @@
+/* These apply to the whole website */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,66 +8,67 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     background-color: rgb(6, 0, 24); 
+    overflow-x: hidden;
 }
 
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/pexels-roberto-nickson-2525903.jpg);
-    background-position: center;
+/* Home page */
+
+#container{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg); 
     background-size: cover;
-    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    /* background-attachment: fixed;  --- cool effect */
 }
 
-nav{
+#navbar{
     display: flex;
     padding: 2%;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
-nav img{
+#navbar img{
     width: 150px;
     padding: 2%;
-
 }
 
-.nav-links{
+.nav-content{
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li{
+.nav-content p{
     list-style: none;
     display: inline-block;
     padding: 3px;
     position: relative;
-}
-
-.nav-links p{
-    list-style: none;
-    display: inline-block;
-    padding: 3px;
-    position: relative;
-}
-
-.nav-links ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.nav-links p{
     color: grey;
     text-decoration: none;
     font-size: 25px;
 }
 
-.nav-links ul li::after{
+.nav-content ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+}
+
+.nav-content ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-content ul li::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -75,57 +78,144 @@ nav img{
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+.nav-content ul li:hover::after{
     width: 100%;
 }
 
-.text-box{
-    width: 90%;
-    color: white;
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.nav-content p:hover {
+    cursor: default;
+}
+
+#homepage {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 84vh;
+    background-color: transparent;
+    align-items: center;
+}
+  
+.circlepfp-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 0 0;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 200px;
+}
+.circlepfp-container img {
+    max-width: 300px; 
+    max-height: 300px; 
+}
+  
+.homepage-text {
+    align-self: center;
     text-align: center;
-}
-
-.text-box h1{
-    font-size: 50;
-}
-
-.text-box p{
-    font-size: 20;
-}
-
-
-.about-me h1{
-    width: 80%;
-    color: white;
-    text-align: center;
-    padding-top: 100px;
-    margin: auto;
-}
-
-.about-me p{
-    width: 80%;
-    color: white;
+    margin: 0 0;
     text-align: left;
-    padding-top: 100px;
-    margin: auto;
+    margin-bottom: 160px;
 }
-
-.underlined {
-    text-decoration: underline;
-    text-decoration-color: blue;
+  
+.homepage-text p {
+    font-weight: 600;
     color: white;
-  }
-
-.about-me{
-    text-align: right;
 }
 
-.about-me img{
-    text-align: right;
-    max-width: 50%;
+.homepage-text:hover {
+    cursor: default;
+}
+  
+.p1 {
+    text-align: center;
+}
+  
+.p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+  
+.homepage-title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+  
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+  
+.icon1, .icon2 {
+    cursor: pointer;
+    height: 3rem;
+}
+  
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+  
+.btn-contact,
+.btn-cv {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    color: white;
+}
+  
+.btn-cv:hover,
+.btn-contact:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    border: rgb(255, 255, 255) 0.1rem solid;
+    background-color: gray;
 }
 
+.btn-contact,.btn-cv {
+    background: none;
+}
+
+/* About page */
+
+.about-title{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+
+/* Media Queries */
+  
+@media screen and (max-width: 1200px) {
+    #homepage {
+        
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .text{
+        margin-bottom: 20;
+    }
+    
+    .circlepfp-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+        margin-bottom: 20px;
+    }
+
+    .p2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}

@@ -8,48 +8,99 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class = "header">
-            <nav>
-                <a href="index.html"> <img src="images/nick logo colour.png"</a>
-                <div class="nav-links">
+        <div id="container">
+            <nav id="navbar">
+                <div><a href="index.html"> <img src="images/nick logo colour.png"></a></div>
+                <div class="nav-content">
                     <ul>
                         <li><a href="index.html"> Home </a></li>
-                        <p> /> </p>
+                        <p class="slash"> /> </p>
                         <li><a href="#about-me"> About</a></li>
-                        <p> /> </p>
+                        <p class="slash"> /> </p>
                         <li><a href=""> Experience</a></li>
-                        <p> /> </p>
+                        <p class="slash"> /> </p>
                         <li><a href=""> Projects</a></li>
-                        <p> /> </p>
+                        <p class="slash"> /> </p>
                         <li><a href=""> Contact</a></li>
-                        <p> /> </p>
+                        <p class="slash"> /> </p>
                     </ul>
-
                 </div>
             </nav>
 
-        <div class="text-box">
-            <h1> <b>Hi, my name is</b> <span class="underlined"> Nichita Maftei </span></h1>
-            <p> I'm a Computer Science student at Kingston University</p>
+            <section id="homepage">
+                <div class="circlepfp-container">
+                    <img src="./images/circlepfp.png" alt="Picture of Nichita" />
+                </div>
+                <div class="homepage-text">
+                    <p class="p1">Hello, I'm</p>
+                    <h1 class="homepage-title">Nichita Maftei</h1>
+                    <p class="p2">Computer Science student at Kingston University</p>
+                    <div class="button-container">
+                    <button class="btn btn-cv" onclick="window.open('./images/Nichta Maftei CV pdf final.pdf')"> Download CV </button>
+                    <button class="btn btn-contact" onclick="location.href='./#contact'"> Contact Me </button>
+                    </div>
+                    <div id="socials-container">
+                    <img src="./images/linkedin logo.png" alt="My LinkedIn profile" class="icon1" onclick="location.href='https://linkedin.com/in/nichitamaftei'"/>
+                    <img src="./images/githublogo-dark.png" alt="My Github profile" class="icon2" onclick="location.href='https://github.com/nichitamaftei'"/>
+                    </div>
+                </div>
+                </section>
         </div>
+
+        <section id="about-title"> 
+
+            <div class="about-title">
+                <h1> About </h1>
+            </div>
+
+        </section>
+
+        <section id="about-me">
+            <div class="text-container">
+                <div class="question">
+                    How did I become interested in coding?
+                </div>
+                <div class="paragraph">
+                    <p>
+                        I have grown up and interacted with technology constantly and with the addition of watching my dad build PCs, it has sparked my fascination with computers. My first real experience with coding began in secondary school starting with visual basic as my first language. My interest only grew as I began to discover how the games I play and applications I use are all coded and how real world problems can be solved by code.
+                    </p>
+                </div>
+
+
+                <div class="question">
+                    What coding experience do you have?
+
+                </div>
+                <div class="paragraph">
+                    <p>
+                        In my spare time, I often create Python, Java, JavaScript, HTML, and CSS programs and practice using GitHub to track the progress of my code and to familiarise myself with working in a group development environment. Recently in University, I have learnt the Java programming language alongside Object Oriented programming and it has rapidly become my favourite language to code in.
+                    </p>
+                </div>
+
+                <div class="question">
+                    Favourite coding experience
+                </div>
+                <div class="paragraph">
+                    <p>
+                        One of my favorite coding experiences was during my A-level Computer Science course in sixth form. I created a Driving Test Theory app using Python and the tkinter library for the GUI. Despite facing challenges, I completed the project, which was a culmination of my programming knowledge. I even added features like a local flat-file database for user registration, used graphs for result visualization, and experimented with Object-Oriented Programming. Although the 3300-line Python program wasn't my cleanest or most efficient, it marked a significant step in my journey toward becoming a Software Engineer. You can watch a video of the app here: [link].
+
+                        Another notable coding achievement was when I designed a two-player blackjack game in Java for my Programming 1 course, adhering to object-oriented principles and ensuring clean code and a user-friendly text interface. I was thrilled with the final product.
+                        
+                    </p>
+                </div>
+
+            </div>
+            <div class="img-container">
+                <a class="nick" href="">
+                    <img src="images/me copy.jpg">
+                </a>
+            </div>
+        </section>
+
+        <section class="Experience">
 
 
 
         </section>
-
-    <section class="about-me" id="about-me">
-
-        <a class="nick" href=""> <img src="images/me copy.JPG"</a>
-
-
-        <h1> About </h1>
-
-        <p>How did you become
-            interested in coding? <br>
-            
-            I have grown up and interacted with technology constantly and with the addition of watching my dad build PCs, it has sparked my fascination with computers. My first real experience with coding began in secondary school starting with visual basic as my first language. My interest only grew as I began to discover how the games I play and applications I use are all coded and how real world problems can be solved by code.
-        </p>
-
-    </section>
     </body>
 </html>
