@@ -18,7 +18,7 @@ body {
 /* Home page */
 
 #container{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg); 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/reverse\ background.png); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,6 +66,10 @@ body {
     color: white;
     text-decoration: none;
     font-size: 25px;
+}
+
+.nav-content ul{
+    font-size: 0;  /* Removes whitespace inbetween the navbar */
 }
 
 .nav-content ul li::after{
@@ -119,7 +123,7 @@ body {
   
 .homepage-text p {
     font-weight: 600;
-    color: white;
+    
 }
 
 .homepage-text:hover {
@@ -128,11 +132,14 @@ body {
   
 .p1 {
     text-align: center;
+    color: grey;
+    font-size: 20px;
 }
   
 .p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: white;
 }
   
 .homepage-title {
@@ -146,9 +153,15 @@ body {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    align-items: center;
 }
   
-.icon1, .icon2 {
+.icon1{
+    cursor: pointer;
+    height: 4rem;
+}
+
+.icon2{
     cursor: pointer;
     height: 3rem;
 }
@@ -167,38 +180,218 @@ body {
     border-radius: 2rem;
 }
   
-.btn-contact,
-.btn-cv {
+.btn-contact, .btn-cv {
     border: rgb(53, 53, 53) 0.1rem solid;
     color: white;
+    background: none;
+    background-color: #ffffff25;
 }
   
-.btn-cv:hover,
-.btn-contact:hover {
+.btn-cv:hover, .btn-contact:hover {
     cursor: pointer;
     background: rgb(0, 0, 0);
     border: rgb(255, 255, 255) 0.1rem solid;
     background-color: gray;
 }
 
-.btn-contact,.btn-cv {
-    background: none;
-}
-
 /* About page */
 
+#about-me{
+    display: flex;
+    
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 208px;
+}
+
 .about-title{
-    font-size: 3rem;
+    font-size: 40px;
     text-align: center;
+    margin-bottom: 100px;
     color: white;
 }
+
+.about-title-p1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    color: grey;
+}
+
+.about-text{
+    font-size: 20px;
+    color: white;
+}
+
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.about-img-container img{
+    width: 400px;
+    margin-right: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-container{
+    display: flex;
+    color: white;
+    margin-bottom: 30px;
+    margin: 30px;
+    justify-content: space-between;
+    
+    
+}
+
+.work-experience{
+    margin-right: 40px;
+}
+
+
+/* Experience page */
+
+.experience-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.experience-title-p1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    color: grey;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column; /* Stack experience items vertically */
+    gap: 20px; /* Adds space between each experience item */
+    align-items: center; /* Center align items horizontally within the parent container */
+}
+
+.experience-item {
+    display: flex;
+    align-items: center; /* Vertically aligns the children within the experience-item */
+    gap: 20px; /* Adds space between the general info and bullet points containers */
+    width: 100%; /* Ensure it takes full width of its parent */
+    max-width: 1000px; /* Adjust this width as needed */
+}
+
+.general-info-container,
+.bullerpoints-container {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.general-info-container {
+    flex: 1; /* Allows it to grow and shrink as needed */
+    max-width: 300px; /* Adjust this width as needed */
+    text-align: center;
+    font-size: 20px;
+}
+
+.bullerpoints-container {
+    flex: 2; /* Allows it to grow and shrink as needed */
+    font-size: 17px;
+}
+
+.bullerpoints-container ul {
+    list-style-type: disc; /* Adds bullet points to the list items */
+    padding-left: 20px; /* Adds space to the left of the list (for bullet points) */
+    margin: 0; /* Removes default margin */
+}
+
+.bullerpoints-container li {
+    margin-bottom: 5px; /* Adjust this value to increase/decrease the gap between bullet points */
+}
+
+
+.general-info-container li {
+    list-style-type: none; /* Removes the bullet points */
+    text-align: center; /* Centres the text horizontally */
+    padding: 5px; /* Optional: Adds some space around the text */
+}
+
+.general-info-container li p {
+    margin: 0; /* Removes default margin from <p> tags to avoid extra space */
+}
+
+
+
+
+
+/* Projects page */
+
+.project-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.project-title-p1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    color: grey;
+}
+
+
+.project-item {
+    display: flex; /* Enable Flexbox on the parent container */
+    align-items: center; /* Align items vertically in the centre (optional) */
+    gap: 20px; /* Add space between items (optional) */
+    justify-content: center;
+}
+
+.project-info-container {
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+.image-container {
+    /* Styles specific to the image container */
+}
+
+
+#cheese-img{
+    width: 700px;
+    padding: 2%;
+}
+
+#cv-builder-img{
+    width: 700px;
+    padding: 2%;
+}
+
+#theory-app-img{
+    width: 700px;
+    padding: 2%;
+}
+
+#website-img{
+    width: 700px;
+    padding: 2%;
+}
+
+
 
 
 /* Media Queries */
   
 @media screen and (max-width: 1200px) {
     #homepage {
-        
         flex-direction: column; 
         align-items: center;
     }
@@ -217,5 +410,26 @@ body {
     .p2 {
         font-size: 1.25rem;
         text-align: center;
+    }
+
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+        
+    }
+
+    .about-img-container{
+        width: 400px;
+        margin-bottom: 100px;
+    }
+
+    .about-container{
+        margin: 40px;
+        
+        
     }
 }
