@@ -270,61 +270,61 @@ body {
     color: grey;
 }
 
+
 .experience {
     display: flex;
-    flex-direction: column; /* Stack experience items vertically */
-    gap: 20px; /* Adds space between each experience item */
-    align-items: center; /* Center align items horizontally within the parent container */
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center;
+    width: 100%;
 }
 
 .experience-item {
     display: flex;
-    align-items: center; /* Vertically aligns the children within the experience-item */
-    gap: 20px; /* Adds space between the general info and bullet points containers */
-    width: 100%; /* Ensure it takes full width of its parent */
-    max-width: 1000px; /* Adjust this width as needed */
-}
-
-.general-info-container,
-.bullerpoints-container {
+    justify-content: space-between; 
+    align-items: center;
+    gap: 20px; 
+    width: 100%;
+    max-width: 1000px; 
     padding: 20px;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    
 }
+
 
 .general-info-container {
-    flex: 1; /* Allows it to grow and shrink as needed */
-    max-width: 300px; /* Adjust this width as needed */
-    text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    flex-grow: 1; 
+    padding-left: 20px;
 }
 
-.bullerpoints-container {
-    flex: 2; /* Allows it to grow and shrink as needed */
-    font-size: 17px;
+.date-container {
+    white-space: nowrap; 
+    font-size: 18px;
+    padding-left: 20px;
+    text-align: right;
 }
 
-.bullerpoints-container ul {
-    list-style-type: disc; /* Adds bullet points to the list items */
-    padding-left: 20px; /* Adds space to the left of the list (for bullet points) */
-    margin: 0; /* Removes default margin */
+.logo-img {
+    max-width: 80px;
+    max-height: 80px;
 }
 
-.bullerpoints-container li {
-    margin-bottom: 5px; /* Adjust this value to increase/decrease the gap between bullet points */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .general-info-container, .date-container {
+        padding-left: 0; 
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
 
-.general-info-container li {
-    list-style-type: none; /* Removes the bullet points */
-    text-align: center; /* Centres the text horizontally */
-    padding: 5px; /* Optional: Adds some space around the text */
-}
-
-.general-info-container li p {
-    margin: 0; /* Removes default margin from <p> tags to avoid extra space */
-}
 
 
 
@@ -348,42 +348,202 @@ body {
 }
 
 
-.project-item {
-    display: flex; /* Enable Flexbox on the parent container */
-    align-items: center; /* Align items vertically in the centre (optional) */
-    gap: 20px; /* Add space between items (optional) */
-    justify-content: center;
+#projects {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
 }
 
-.project-info-container {
-    padding-right: 100px;
-    font-size: 20px;
+.project-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 600px; 
+    background-color: rgb(41, 39, 39);
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    border-color: grey;
+    margin: 15px;
 }
+
 
 .image-container {
-    /* Styles specific to the image container */
+    width: 100%; 
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+#cheese-img-container{
+    margin-bottom: 20px;
 }
 
 
-#cheese-img{
-    width: 700px;
-    padding: 2%;
+.project-img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
 }
 
-#cv-builder-img{
-    width: 700px;
-    padding: 2%;
+
+.project-info-container {
+    font-size: 16px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    text-align: center; 
 }
 
-#theory-app-img{
-    width: 700px;
-    padding: 2%;
+
+
+
+.project-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0; 
 }
 
-#website-img{
-    width: 700px;
-    padding: 2%;
+.technologies {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+    
 }
+
+.tech-button {
+    background-color: gray; 
+    color: #fff; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 8px 15px; 
+    font-size: 14px; 
+    text-align: center; 
+    cursor: default; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 25px;
+}
+
+.tech-button:hover {
+    background-color: darkgray; 
+    transform: scale(1.05); 
+}
+
+.tech-button:active {
+    background-color: #003d7a; 
+}
+
+@media (max-width: 640px) {
+    .project-item {
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
+
+
+/* Report page */
+
+.reports-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.reports-title-p1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    color: grey;
+}
+
+
+#technical-reports {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+
+.report-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    max-width: 600px; 
+    background-color: rgb(41, 39, 39);
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+
+.iframe-container {
+    width: 100%;
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+}
+
+
+.report-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover; 
+}
+
+
+.report-info-container {
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.report-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Report page */
+
+.contact-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.contact-title-p1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    color: grey;
+}
+
+
 
 
 
