@@ -1,6 +1,7 @@
 <html>
     <head> 
-        <meta name = "viewport" content = "widh=device-width, intial-scale=1.0">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
         <title> Nichita Maftei </title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,14 +9,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Blank Home section placeholder for navbar to jump to -->
+        <section id="home-blank"> </section>
+
         <!-- Homepage container-->
         <div id="container">
             <!-- Navbar -->
             <nav id="navbar">
-                <div><a href="index.html"> <img src="images/nick logo colour.png"></a></div>
+                <div><a href="index.html"> <img id="nick-logo"src="images/nick logo colour.png" alt="Logo"></a></div>
                 <div class="nav-content">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#home-blank">Home</a></li>
                         <p class="slash">/></p>
                         <li><a href="#about-blank">About</a></li>
                         <p class="slash">/></p>
@@ -29,7 +33,24 @@
                         <p class="slash">/></p>
                     </ul>
                 </div>
+                <!-- Burger Menu Button -->
+                <div class="burger-menu" id="burger-menu">
+                    <img id="menu-icon"src="images/menu-icon.png" alt="">
+                </div>
+                <!-- Side Menu Container -->
+                <div class="side-menu" id="side-menu">
+                    <div class="close-btn" id="close-btn">&times;</div>
+                    <ul>
+                        <li><a href="#home-blank">Home</a></li>
+                        <li><a href="#about-blank">About</a></li>
+                        <li><a href="#experience-blank">Experience</a></li>
+                        <li><a href="#projects-blank">Projects</a></li>
+                        <li><a href="#reports-blank">Technical Reports</a></li>
+                        <li><a href="#contact-blank">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
+            
             <!-- Homepage -->
             <section id="homepage">
                 <div class="circlepfp-container">
@@ -49,7 +70,16 @@
                     </div>
                 </div>
             </section>
+
+            <section class="scroll-indicator">
+                <p>Scroll!</p>
+                <div class="arrow">
+                    <img id="down-arrow" src="images/down arrow.png" alt="">
+                </div>
+            </section>
         </div>
+        
+        
 
         <!-- Blank About section placeholder for navbar to jump to -->
         <section id="about-blank"> </section>
@@ -73,7 +103,6 @@
 
             <div class="about-text-container">
                 <div class="about-container">
-
                     <div class="work-experience">  
                         <h1> Work Experience </h1>
                         <p1>• Academic Mentor <br> • I.T Intern  <br> • I.T Assistant</p1>   
@@ -248,6 +277,7 @@
                 <div class="project-info-container">
                     <div class="technologies">
                         <span class="tech-button">Python</span>
+                        <span class="tech-button">Tkinter</span>
                     </div>
                 </div>
                 <div>
@@ -276,6 +306,7 @@
                     <div class="technologies">
                         <span class="tech-button">HTML</span>
                         <span class="tech-button">CSS</span>
+                        <span class="tech-button">Javascript</span>
                     </div>
                 </div>
                 <div>
@@ -303,6 +334,7 @@
                 <div class="project-info-container">
                     <div class="technologies">
                         <span class="tech-button">Java</span>
+                        <span class="tech-button">Swing</span>
                     </div>
                 </div>
                 <div>
@@ -417,7 +449,7 @@
         <!-- Text divider between sections -->
         <section id="title-container"> 
             <div class="title-p1">
-                <p1> Send me an email to view my CV or just to have achat!</p1>
+                <p1> Send me an email to view my CV or just to have a chat!</p1>
             </div>
 
             <div class="title">
@@ -453,7 +485,6 @@
                         
                     </div>
                     
-        
                     <label for="message">Message:</label>
                     <textarea id="message-input" name="message" required></textarea>
         

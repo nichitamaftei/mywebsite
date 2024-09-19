@@ -13,6 +13,7 @@ html {
 body {
     background-color: rgb(6, 0, 24); 
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* Home page */
@@ -35,7 +36,7 @@ body {
     margin: auto;
 }
 
-#navbar img{
+#nick-logo{
     width: 150px;
     padding: 2%;
 }
@@ -94,7 +95,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 84vh;
+    height: 75vh;
     background-color: transparent;
     align-items: center;
 }
@@ -194,25 +195,176 @@ body {
     background-color: gray;
 }
 
-/* About page */
 
-#about-me{
-    display: flex;
-    
-    padding: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 208px;
+
+@media (max-width: 1200px) {
+    #homepage{
+        margin-top: 75px;
+    }
 }
 
-.title{
+@media (max-width: 1035px) {
+    #homepage{
+        margin-top: 75px;
+    }
+}
+
+.menu-icon{
+    height: 15px; /* Set the height of the image */
+    width: 15px;  /* Auto-adjust width to maintain aspect ratio */
+    display: block; 
+    
+}
+
+.burger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+
+.burger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.burger-menu.hidden {
+    display: none; /* Hide the icon */
+}
+
+/* Side Menu Styles */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(64, 64, 64, 0.9); /* Dark grey with 40% opacity */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.side-menu ul {
+    padding-top: 80px;
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.side-menu .close-btn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.side-menu.active {
+    transform: translateX(0);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1100px) {
+    .nav-content {
+        display: none; /* Hide the regular menu on small screens */
+    }
+
+    .burger-menu {
+        display: flex; /* Show burger menu button */
+        margin-right: 15px;
+        
+    }
+}
+
+
+/* Scroll Indicator Styling */
+.scroll-indicator {
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    font-family: Arial, sans-serif;
+}
+
+.scroll-indicator p {
+    padding-top: 30px;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 10px;
+    animation: fadeInText 4s infinite;
+}
+
+/* Arrow Styling */
+#down-arrow {
+    width: 24px; /* Adjust size of the arrow image */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: bounce 3s infinite; /* Apply bounce animation */
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+/* Arrow bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px); /* Move arrow down */
+    }
+    60% {
+        transform: translateY(5px);  /* Move arrow up */
+    }
+}
+
+/* Text fade animation */
+@keyframes fadeInText {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+
+
+
+/* About page */
+
+#about-me {
+    display: flex;
+    padding: 20px;
+    align-items: center; /* Center items vertically */
+}
+
+.title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 100px;
     color: white;
 }
 
-.title-p1{
+.title-p1 {
     font-size: 20px;
     text-align: center;
     margin-top: 50px;
@@ -220,36 +372,72 @@ body {
     color: grey;
 }
 
-.about-text{
+.about-text {
     font-size: 20px;
     color: white;
 }
 
-.about-text-container{
+.about-text-container {
     display: flex;
     flex-direction: column;
     color: white;
-}
-
-.about-img-container img{
     width: 400px;
-    margin-right: 50px;
-    justify-content: center;
-    margin-top: 30px;
 }
 
-.about-container{
+.about-img-container {
+    flex: 1; /* Allow image container to grow if needed */
+    display: flex;
+    justify-content: center;
+}
+
+.about-img-container img {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-container {
     display: flex;
     color: white;
-    margin-bottom: 30px;
     margin: 30px;
     justify-content: space-between;
-    
-    
 }
 
-.work-experience{
+.work-experience {
     margin-right: 40px;
+}
+
+.about-text-container {
+    flex: 1; /* Allow text container to take more space */
+    padding-right: 75px;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 1200px) {
+    .about-text-container {
+        padding-right: 0; /* Remove margins for smaller screens */
+        padding-bottom: 15px;
+    }
+
+    .about-img-container{
+        padding-bottom: 15px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+        
+    }
+
+    .about-container{
+        margin: 40px;
+    }
 }
 
 
@@ -265,6 +453,7 @@ body {
     gap: 20px; 
     align-items: center;
     width: 100%;
+   
 }
 
 .experience-item {
@@ -299,7 +488,7 @@ body {
     max-height: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .experience-item {
         flex-direction: column; 
         text-align: center;
@@ -678,7 +867,7 @@ body {
 
 
 
-/* Report page */
+/* Contact page */
 
 #contact-me {
     text-align: center;
@@ -854,24 +1043,5 @@ body {
         text-align: center;
     }
 
-    #about-me{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        margin-left: 200px;
-        margin-right: 200px;
-        
-    }
-
-    .about-img-container{
-        width: 400px;
-        margin-bottom: 100px;
-    }
-
-    .about-container{
-        margin: 40px;
-        
-        
-    }
+    
 }

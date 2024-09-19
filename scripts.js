@@ -30,3 +30,21 @@ function toggleContactForm() {
 }
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.getElementById('burger-menu');
+    const sideMenu = document.getElementById('side-menu');
+    const closeBtn = document.getElementById('close-btn');
+
+    burgerMenu.addEventListener('click', function () {
+        sideMenu.classList.toggle('active');
+        burgerMenu.classList.toggle('hidden'); // Hide the burger icon when side menu is active
+    });
+
+    closeBtn.addEventListener('click', function () {
+        sideMenu.classList.remove('active');
+        burgerMenu.classList.remove('hidden'); // Show the burger icon when side menu is closed
+    });
+});
+
+
+
