@@ -319,7 +319,7 @@ body {
 
 @media (max-width: 1200px) {
     #homepage{
-        margin-top: 75px;
+        margin-top: 125px;
         flex-direction: column; 
         align-items: center;
     }
