@@ -54,15 +54,15 @@
             <!-- Homepage -->
             <section id="homepage">
                 <div class="circlepfp-container">
-                    <img src="./images/circlepfp.png" alt="Picture of Nichita" />
+                    <img src="./images/me circle crop.jpg" alt="Picture of Nichita" />
                 </div>
                 <div class="homepage-text">
                     <p class="p1">Hello, I'm</p>
                     <h1 class="homepage-title">Nichita Maftei</h1>
                     <p class="p2">Computer Science student at Kingston University</p>
                     <div class="button-container">
-                    <button class="btn btn-cv" onclick="window.open('./images/Nichta Maftei CV pdf final.pdf')"> Download CV </button>
-                    <button class="btn btn-contact" onclick="location.href='./#contact'"> Contact Me </button>
+                   
+                    <button class="btn btn-contact" onclick="location.href='#contact-blank'"> Contact Me </button>
                     </div>
                     <div id="socials-container">
                     <img src="./images/linkedin logo.png" alt="My LinkedIn profile" class="icon1" onclick="location.href='https://linkedin.com/in/nichitamaftei'"/>
@@ -389,7 +389,7 @@
             <div id="modal-quantum" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-quantum')">&times;</span>
-                    <h2>How Quantum Computers are a Threat to Cyber Security</h2>
+                    <h2 class="model-title">How Quantum Computers are a Threat to Cyber Security</h2>
                     <div class="iframe-container-modal">
                         <iframe src="images/How Quantum Computers is a threat to Cyber Security.pdf" class="report-iframe-modal" title="Quantum Report"></iframe>
                     </div>
@@ -412,7 +412,7 @@
             <div id="modal-coding" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-coding')">&times;</span>
-                    <h2>Best Practices in Coding to Prevent Vulnerabilities</h2>
+                    <h2 class="model-title">Best Practices in Coding to Prevent Vulnerabilities</h2>
                     <div class="iframe-container-modal">
                         <iframe src="images/Best practices in coding to prevent vulnerabilities and protect against cyber-attacks.pdf" class="report-iframe-modal" title="Coding Practices Report"></iframe>
                     </div>
@@ -435,7 +435,7 @@
             <div id="modal-driverless" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal-driverless')">&times;</span>
-                    <h2>Driverless Cars</h2>
+                    <h2 class="model-title">Driverless Cars</h2>
                     <div class="iframe-container-modal">
                         <iframe src="images/Technical Report 2- Driverless Cars.pdf" class="report-iframe-modal" title="Driverless Cars Report"></iframe>
                     </div>
@@ -447,7 +447,7 @@
         <section id="contact-blank"> </section>
 
         <!-- Text divider between sections -->
-        <section id="title-container"> 
+        <section id="contact-title-container"> 
             <div class="title-p1">
                 <p1> Send me an email to view my CV or just to have a chat!</p1>
             </div>
@@ -459,39 +459,21 @@
 
         <!-- Contact me section -->
         <section id="contact-me">
-           
-            <div class="contact-icon" onclick="toggleContactForm()">
-                <img id="send-email-icon" src="images/send email icon.png" alt="Contact Icon">
-            </div>
-        
-            <!-- Overlay that dims the background -->
-            <div id="overlay" class="overlay" onclick="toggleContactForm()"></div>
-        
-            <!-- Contact form that slides up -->
-            <div id="contact-form-container" class="contact-form-container">
-                <span class="close-btn" onclick="toggleContactForm()">&times;</span>
-                <form class="contact-form">
-                    <h3>Get in Touch</h3>
-                    <div id="name-and-email-container">
-                        <div>
-                            <label for="name">Name:</label>
-                            <input type="name-input" id="name" name="name" required>
-                        </div>
-                        
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email-input" id="email" name="email" required>
-                        </div>
-                        
-                    </div>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message-input" name="message" required></textarea>
-        
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                  <img src="images/email icon.png" alt="Email icon" class="email-icon"/>
+                  <p><a class="words" href="mailto:nichitamaftei04@gmail.com">nichitamaftei04@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                  <img src="images/linkedin logo.png" alt="LinkedIn icon" class="email-icon"/>
+                  <p><a class="words" href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+                </div>
+            
         </section>
+
+        <footer>
+            <p>Copyright &#169; 2024 Nichita Maftei. All Rights Reserved.</p>
+        </footer>
 
         <script src="scripts.js"></script>
 

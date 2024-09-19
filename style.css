@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -195,29 +196,15 @@ body {
     background-color: gray;
 }
 
-
-
-@media (max-width: 1200px) {
-    #homepage{
-        margin-top: 75px;
-    }
-}
-
-@media (max-width: 1035px) {
-    #homepage{
-        margin-top: 75px;
-    }
-}
-
 .menu-icon{
-    height: 15px; /* Set the height of the image */
-    width: 15px;  /* Auto-adjust width to maintain aspect ratio */
+    height: 15px;
+    width: 15px; 
     display: block; 
     
 }
 
 .burger-menu {
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
     cursor: pointer;
     
@@ -232,17 +219,17 @@ body {
 }
 
 .burger-menu.hidden {
-    display: none; /* Hide the icon */
+    display: none; 
 }
 
-/* Side Menu Styles */
+/* Side Menu Styling */
 .side-menu {
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     width: 250px;
-    background-color: rgba(64, 64, 64, 0.9); /* Dark grey with 40% opacity */
+    background-color: rgba(64, 64, 64, 0.9); 
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1000;
@@ -279,21 +266,6 @@ body {
     transform: translateX(0);
 }
 
-/* Media Query for Responsive Design */
-@media (max-width: 1100px) {
-    .nav-content {
-        display: none; /* Hide the regular menu on small screens */
-    }
-
-    .burger-menu {
-        display: flex; /* Show burger menu button */
-        margin-right: 15px;
-        
-    }
-}
-
-
-/* Scroll Indicator Styling */
 .scroll-indicator {
     text-align: center;
     position: relative;
@@ -310,13 +282,12 @@ body {
     animation: fadeInText 4s infinite;
 }
 
-/* Arrow Styling */
 #down-arrow {
-    width: 24px; /* Adjust size of the arrow image */
+    width: 24px; 
     height: auto;
     display: block;
     margin: 0 auto;
-    animation: bounce 3s infinite; /* Apply bounce animation */
+    animation: bounce 3s infinite; 
     height: 50px;
     width: 50px;
     padding: 10px;
@@ -328,10 +299,10 @@ body {
         transform: translateY(0);
     }
     40% {
-        transform: translateY(10px); /* Move arrow down */
+        transform: translateY(10px); 
     }
     60% {
-        transform: translateY(5px);  /* Move arrow up */
+        transform: translateY(5px);  
     }
 }
 
@@ -346,7 +317,37 @@ body {
 }
 
 
+@media (max-width: 1200px) {
+    #homepage{
+        margin-top: 75px;
+        flex-direction: column; 
+        align-items: center;
+    }
 
+    .circlepfp-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+        margin-bottom: 20px;
+    }
+
+    .p2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .nav-content {
+        display: none; 
+    }
+
+    .burger-menu {
+        display: flex; 
+        margin-right: 15px;
+    }
+}
 
 
 /* About page */
@@ -354,7 +355,7 @@ body {
 #about-me {
     display: flex;
     padding: 20px;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
 .title {
@@ -385,15 +386,15 @@ body {
 }
 
 .about-img-container {
-    flex: 1; /* Allow image container to grow if needed */
+    flex: 1; 
     display: flex;
     justify-content: center;
 }
 
 .about-img-container img {
-    width: 100%; /* Make image responsive */
-    max-width: 400px; /* Maximum width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
 }
 
 .about-container {
@@ -408,14 +409,14 @@ body {
 }
 
 .about-text-container {
-    flex: 1; /* Allow text container to take more space */
+    flex: 1; 
     padding-right: 75px;
     padding-bottom: 35px;
 }
 
 @media (max-width: 1200px) {
     .about-text-container {
-        padding-right: 0; /* Remove margins for smaller screens */
+        padding-right: 0; 
         padding-bottom: 15px;
     }
 
@@ -464,11 +465,10 @@ body {
     width: 100%;
     max-width: 1000px; 
     padding: 20px;
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    color: white;
 }
-
 
 .general-info-container {
     font-size: 18px;
@@ -504,9 +504,6 @@ body {
 
 
 
-
-
-
 /* Projects page */
 
 #projects {
@@ -532,6 +529,8 @@ body {
     margin: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     cursor: pointer; 
+    color: white;
+    background-color: rgb(31, 33, 34);
 }
 
 .click-here-text {
@@ -568,14 +567,12 @@ body {
     margin-bottom: 20px;
 }
 
-
 .project-img {
     width: 100%; 
     height: 100%; 
     object-fit: cover;
     object-position: center;
 }
-
 
 .project-info-container {
     font-size: 16px; 
@@ -584,10 +581,8 @@ body {
     align-items: center;
     gap: 10px; 
     text-align: center; 
+    
 }
-
-
-
 
 .project-name {
     font-size: 27px;
@@ -627,20 +622,21 @@ body {
 
 /* Modal styling */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; 
     z-index: 999; 
     left: 0;
     top: 0;
     width: 100%; 
     height: 100%; 
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: rgb(31, 33, 34);
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -650,6 +646,7 @@ body {
     overflow-y: auto; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     position: relative;
+    
 }
 
 .modal-img {
@@ -716,6 +713,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     margin: 15px;
+    color: white;
 }
 
 
@@ -808,7 +806,7 @@ body {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: rgb(31, 33, 34);
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -818,6 +816,7 @@ body {
     overflow-y: auto; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    color: white;
 }
 
 .close {
@@ -863,185 +862,63 @@ body {
 }
 
 
-
-
-
-
 /* Contact page */
 
-#contact-me {
-    text-align: center;
+
+#contact-title-container{
+    margin-top: 130px;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    border-radius: 2rem;     
+    border: rgb(163, 163, 163) 0.1rem solid;
+    background: rgb(163, 163, 163);
+    padding: 0.5rem;
+    max-width: 500px; 
+    margin: 0 auto; 
+    margin-bottom: 100px;
+    box-shadow: 0 0 20px 5px rgba(173, 216, 230, 0.8); 
+}
+
+.contact-info-upper-container:hover {
+    box-shadow: 0 0 25px 8px rgba(173, 216, 230, 1); 
+}
+
+  
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.words{
+    text-decoration: none;
+    color: black;
+    
 }
 
 .contact-icon {
-    cursor: pointer;
-    margin-top: 20px;
-    transition: transform 0.3s ease;
-    
+    cursor: default;
 }
 
-#send-email-icon{
-    height: 200px;
-    width: 175px;
-    animation: bounce 2s infinite;
+.email-icon {
+    height: 50px;
+    width: 50px;
 }
-
-
-.contact-icon:hover {
-    transform: scale(1.1);
-}
-
-.contact-form-container {
-    position: fixed;
-    bottom: -100%; 
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    transition: bottom 0.5s ease; 
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    height: 350px;
-}
-
-.contact-form-container.active {
-    bottom: 0;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-.contact-form {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-}
-
-.contact-form h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-#message-input{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    height: 100px;
-    resize: vertical;
-}
-
-#name-input, #email-input {
-    width: 100%; 
-    padding: 15px; 
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-
-#name-and-email-container div {
-    flex: 1;
-    margin-right: 10px; 
-}
-
-#name-and-email-container div:last-child {
-    margin-right: 0; 
-}
-
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    display: none; 
-    z-index: 999; 
-}
-
-
-.overlay.active {
-    display: block;
-}
-
-
-#name-and-email-container{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-
-
-
-
-/* Media Queries */
   
-@media screen and (max-width: 1200px) {
-    #homepage {
-        flex-direction: column; 
-        align-items: center;
-    }
+/* Footer */
 
-    .text{
-        margin-bottom: 20;
-    }
-    
-    .circlepfp-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-        margin-bottom: 20px;
-    }
+footer {
+    height: 10vh;
+    margin: 0 1rem;
+}
 
-    .p2 {
-        font-size: 1.25rem;
-        text-align: center;
-    }
-
-    
+footer p {
+    text-align: center;
+    color: white;
 }
