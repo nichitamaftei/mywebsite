@@ -8,7 +8,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Homepage container-->
         <div id="container">
+            <!-- Navbar -->
             <nav id="navbar">
                 <div><a href="index.html"> <img src="images/nick logo colour.png"></a></div>
                 <div class="nav-content">
@@ -23,12 +25,12 @@
                         <p class="slash">/></p>
                         <li><a href="#reports-blank">Technical Reports</a></li>
                         <p class="slash">/></p>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#contact-blank">Contact</a></li>
                         <p class="slash">/></p>
                     </ul>
                 </div>
             </nav>
-
+            <!-- Homepage -->
             <section id="homepage">
                 <div class="circlepfp-container">
                     <img src="./images/circlepfp.png" alt="Picture of Nichita" />
@@ -49,30 +51,27 @@
             </section>
         </div>
 
-        <section id="about-blank">
+        <!-- Blank About section placeholder for navbar to jump to -->
+        <section id="about-blank"> </section>
 
-        </section>
-
-        <section id="about-title-container"> 
-
-            <div class="about-title-p1">
+        <!-- Text divider between sections -->
+        <section class="title-container"> 
+            <div class="title-p1">
                 <p1> Get to know more </p1>
             </div>
 
-            <div class="about-title">
+            <div class="title">
                 <h1> About me </h1>
             </div>
-
         </section>
 
+        <!-- About me section -->
         <section id="about-me">
-
             <div class="about-img-container">
                 <a class="nick" href=""> <img src="images/nichita.jpg"></a>
             </div>
 
             <div class="about-text-container">
-
                 <div class="about-container">
 
                     <div class="work-experience">  
@@ -88,26 +87,28 @@
                 </div>
 
                 <div class="about-text">
-                    <p>My name is Nichita Maftei, and I'm passionate about the world of technology and innovation. My journey into tech started in secondary school, where I dived into coding with Visual Basic. As I progressed, I developed a fascination for cloud technology and its rapid emergence. In addition to my computer science studies, I've worked on exciting projects, including a comprehensive Driving Test Theory application built entirely in Python. I'm also honored to have been chosen as an Academic Mentor for first & second year students.</p>
+                    <p> My name is Nichita Maftei, and I'm passionate about the world of technology and innovation. My journey into tech started in secondary school, where I dived into coding with Visual Basic. As I progressed, I developed a fascination for cloud technology and its rapid emergence. In addition to my computer science studies, I've worked on exciting projects, including a comprehensive Driving Test Theory application built entirely in Python. I'm also honored to have been chosen as an Academic Mentor for first & second year students.</p>
                     
                 </div>
             </div>
         </section>
 
-        <section id="experience-blank">
 
-        </section>
+        <!-- Blank Experience section placeholder for navbar to jump to -->
+        <section id="experience-blank">  </section>
 
-        <section id="experience-title-container"> 
-            <div class="experience-title-p1">
+        <!-- Text divider between sections -->
+        <section class="title-container"> 
+            <div class="title-p1">
                 <p1> <i>Wow! Look at his</i> </p1>
             </div>
 
-            <div class="experience-title">
+            <div class="title">
                 <h1> Experience </h1>
             </div>
         </section>
 
+        <!-- Experience section -->
         <section class="experience">
             <div class="experience-item">
                 <div>
@@ -125,7 +126,6 @@
                 </div>
             </div>
 
-
             <div class="experience-item">
                 <div>
                     <img class="logo-img" src="images/the advantage travel partnership logo.png" alt="">
@@ -141,8 +141,6 @@
                     <p> May 2024 - Aug 2024 </p>
                 </div>
             </div>
-
-
 
             <div class="experience-item">
                 <div>
@@ -160,8 +158,6 @@
                 </div>
             </div>
 
-
-
             <div class="experience-item">
                 <div>
                     <img class="logo-img" src="images/the advantage travel partnership logo.png" alt="">
@@ -177,7 +173,6 @@
                     <p> May 2023 - Aug 2023 </p>
                 </div>
             </div>
-
 
             <div class="experience-item">
                 <div>
@@ -196,152 +191,278 @@
             </div>
         </section>
 
+        <!-- Blank Projects section placeholder for navbar to jump to -->
+        <section id="projects-blank"> </section> 
 
-        <section id="projects-blank"></section>
-
-        </section>
-
-        <section id="project-title-container"> 
-            <div class="experience-title-p1">
+        <!-- Text divider between sections -->
+        <section id="title-container"> 
+            <div class="title-p1">
                 <p1> Some of my beloved </p1>
             </div>
 
-            <div class="project-title">
+            <div class="title">
                 <h1> Projects </h1>
             </div>
         </section>
 
+        <!-- Projects section -->
         <section id="projects">
-               
-            <div class="project-item">
+
+            <!-- Project 1: Cheese Website -->
+            <div class="project-item" onclick="openModal('modal-cheese')">
                 <h3 class="project-name">Cheese Website</h3>
-                <div id="cheese-img-container" class="image-container">
+                <div class="image-container" class="image-container">
                     <img class="project-img" src="images/cheese website.png" alt="Cheese Website Screenshot">
                 </div>
                 <div class="project-info-container">
-                    
                     <div class="technologies">
                         <span class="tech-button">HTML</span>
                         <span class="tech-button">CSS</span>
                         <span class="tech-button">SQL</span>
                         <span class="tech-button">PHP</span>
                         <span class="tech-button">JavaScript</span>
-                        <p>Paragraph about the project...</p>
                     </div>
+                </div>
+                <div>
+                    <p class="click-here-text">(Click for more info) </p>
+                </div>
+            </div>
+        
+            <!-- Modal for Cheese Website -->
+            <div id="modal-cheese" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-cheese')">&times;</span>
+                    <h2 class="model-title">Cheese Website</h2>
+                    <img src="images/cheese website.png" alt="Cheese Website Screenshot" class="modal-img">
+                    <p class="model-text">For my university project, I was tasked to develop an e-commerce website focused on cheese, built using PHP, JavaScript, HTML, CSS, and SQL. The website includes a fully functional admin section where administrators can manage cheese products, allowing them to add new items and update names, prices, and other details. All data is securely connected to an SQL database for efficient management and storage. Users can add items to their basket, with the total automatically calculated based on the quantities and prices. When proceeding to checkout, the order and the assosiated user who placed the order is logged in the SQL database.</p>
+                    <p class="model-text">The site also features a search functionality enhanced by AJAX, offering real-time auto-completion for quicker and more intuitive navigation. I took special care to incorporate accessibility features, addressing factors such as vision impairment, hearing impairment, mobility issues, cognitive impairments, dyslexia, and neurodivergence, ensuring the platform is inclusive for all users. Additionally, I implemented key security measures, including protection against cross-site scripting (XSS) and SQL injection, to safeguard user data and maintain the integrity of the site. This project highlights a balance of functionality, user experience, and security in web development.</p>
                 </div>
             </div>
 
-            
-        
-            <div class="project-item">
-                <div class="project-info-container">
-                    <h3 class="project-name">Swing CV Builder</h3>
-                    <div class="image-container">
-                        <img class="project-img" src="images/cv builder GUI.png" alt="Swing CV Builder Screenshot">
-                    </div>
-                    
-                    <div class="technologies">
-                        <span class="tech-button">Java</span>
-                    </div>
-                    <p>Paragraph about the project...</p>
+            <!-- Project 2: Driving Theory Test App -->
+            <div class="project-item" onclick="openModal('modal-driving')">
+                <h3 class="project-name">Driving Theory Test App</h3>
+                <div class="image-container">
+                    <img class="project-img" src="images/driving theory test app.png" alt="Driving Theory Test App Screenshot">
                 </div>
-                
-            </div>
-        
-            <div class="project-item">
                 <div class="project-info-container">
-                    <h3 class="project-name">Driving Theory Test App</h3>
-                    <div class="image-container">
-                        <img class="project-img" src="images/driving theory test app.png" alt="Driving Theory Test App Screenshot">
-                    </div>
-                    
                     <div class="technologies">
                         <span class="tech-button">Python</span>
                     </div>
-                    <p>Paragraph about the project...</p>
+                </div>
+                <div>
+                    <p class="click-here-text">(Click for more info) </p>
                 </div>
             </div>
         
-            <div class="project-item">
+            <!-- Modal for Driving Theory Test App -->
+            <div id="modal-driving" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-driving')">&times;</span>
+                    <h2 class="model-title">Driving Theory Test App</h2>
+                    <img src="images/driving theory test app.png" alt="Driving Theory Test App Screenshot" class="modal-img">
+                    <p class="model-text">One of my most memorable technology-related projects was during my A-level Computer Science course, where I developed a Driving Theory Test application as part of my final project. Using Python and the Tkinter library, I designed and implemented a comprehensive application that included a graphical user interface. This project was a significant learning experience, allowing me to apply my programming knowledge in a real-world context. I faced various challenges, including creating a local flat-file database for user registration and login, implementing password and username requirements, and visualising user results with graphs. I also explored Object-Oriented Programming principles to structure the application's questions effectively. Despite being my first major project, and although the resulting code spanned thousands of lines and may not have been the most polished, it marked a crucial stepping stone in my development as a Software Engineer. You can view a demonstration of the app <a href="https://www.youtube.com/watch?v=cCVf0-nPyzY&ab_channel=Nichita" target="_blank">here.</a></p>
+                </div>
+            </div>
+
+
+            <!-- Project 3: My Portfolio Website -->
+            <div class="project-item" onclick="openModal('modal-portfolio')">
+                <h3 class="project-name">My Portfolio Website</h3>
+                <div class="image-container">
+                    <img class="project-img" src="images/my website.png" alt="Portfolio Website Screenshot">
+                </div>
                 <div class="project-info-container">
-                    <h3 class="project-name">My Portfolio Website</h3>
-                    <div class="image-container">
-                        <img class="project-img" src="images/my website.png" alt="Portfolio Website Screenshot">
-                    </div>
-                    
                     <div class="technologies">
                         <span class="tech-button">HTML</span>
                         <span class="tech-button">CSS</span>
                     </div>
-                    <p>Paragraph about the project...</p>
+                </div>
+                <div>
+                    <p class="click-here-text">(Click for more info) </p>
+                </div>
+            </div>
+        
+            <!-- Modal for My Portfolio Website -->
+            <div id="modal-portfolio" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-portfolio')">&times;</span>
+                    <h2 class="model-title">My Portfolio Website</h2>
+                    <img src="images/my website.png" alt="Portfolio Website Screenshot" class="modal-img">
+                    <p class="model-text">One of the standout projects in my portfolio is the recent development of my personal website which you are currently this reading on. Crafted using HTML, CSS, and JavaScript, this project was an excellent opportunity to showcase my skills and create a professional online presence. I meticulously designed the website to highlight my work, skills, experience and achievements, ensuring that it was not only visually appealing but also user-friendly. The layout is responsive, adapting seamlessly to various devices and screen sizes, which I achieved through careful use of CSS media queries. The website features interactive elements implemented with JavaScript, enhancing the user experience with dynamic content and smooth navigation. I incorporated modern design principles to ensure a clean and engaging interface, and utilised various CSS techniques to achieve a polished look. </p>
+                    <p class="model-text">This project served as an excellent way to consolidate my knowledge of web technologies into a cohesive and practical application. I thoroughly enjoyed the process of creating it, as it allowed me to apply various skills and techniques in a real-world context. Throughout the development of this website, I took the opportunity to deepen my understanding of GitHub, using it for version control and collaboration. This not only helped streamline the development process but also provided valuable experience in managing code changes and collaborating effectively. As a result, you can view the development process and access the source code publicly on my GitHub, showcasing both the evolution of the project and my coding practices. Overall, this project stands as a testament to my ability to integrate and apply my web development skills in a functional and visually appealing portfolio. </p>
+                </div>
+            </div>
+        
+            <!-- Project 4: Swing CV Builder -->
+            <div class="project-item" onclick="openModal('modal-cv')">
+                <h3 class="project-name">Swing CV Builder</h3>
+                <div class="image-container">
+                    <img class="project-img" src="images/cv builder GUI.png" alt="Swing CV Builder Screenshot">
+                </div>
+                <div class="project-info-container">
+                    <div class="technologies">
+                        <span class="tech-button">Java</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="click-here-text"> (Click to view more info)</p>
+
+                </div>
+            </div>
+        
+            <!-- Modal for Swing CV Builder -->
+            <div id="modal-cv" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-cv')">&times;</span>
+                    <h2 class="model-title">Swing CV Builder</h2>
+                    <img src="images/cv builder GUI.png" alt="Swing CV Builder Screenshot" class="modal-img">
+                    <p class="model-text">One of my significant projects involved developing a CV Builder application using Java Swing. This assignment was designed to provide hands-on experience with Java’s graphical user interface capabilities and file input/output operations. The objective was to create a comprehensive application that allows users to manage and customise their CV efficiently. The application features an intuitive GUI developed with Java Swing, enabling users to edit and update various sections of their CV to tailor it for different job applications.</p>
+                    <p class="model-text">Throughout the project, I focused on implementing a robust data model to handle the CV information, ensuring that users could store, manage, and retrieve their data seamlessly. The project required extensive use of Object-Oriented Programming principles, which I applied to design and develop a user-friendly interface and to ensure the application was both functional and efficient. Rigorous testing was conducted to validate the application’s various use-cases, confirming its reliability and effectiveness. This project significantly enhanced my Java programming skills and deepened my understanding of GUI design and file management in Java.</p>
                 </div>
             </div>
         </section>
         
         
-        <section id="reports-blank"></section>
+        <!-- Blank Reports section placeholder for navbar to jump to -->
+        <section id="reports-blank"> </section>
 
-        </section>
-
-        <section id="reports-title-container"> 
-            <div class="reports-title-p1">
+        <!-- Text divider between sections -->
+        <section id="title-container"> 
+            <div class="title-p1">
                 <p1> I'm very proud of my </p1>
             </div>
 
-            <div class="reports-title">
+            <div class="title">
                 <h1> Technical Reports </h1>
             </div>
         </section>
 
+        <!-- Reports section -->
         <section id="technical-reports">
-            <div class="report-item">
-                <div class="iframe-container">
-                    <iframe src="images/How Quantum Computers is a threat to Cyber Security.pdf" class="report-iframe" title="Technical Report 1"></iframe>
-                </div>
-                <div class="report-info-container">
-                    <h3 class="report-title">How Quantum Computers is a threat to Cyber Security</h3>
-                    <p>This report discusses the development of a responsive web application...</p>
-                </div>
-            </div>
 
-            <div class="report-item">
-                <div class="iframe-container">
-                    <iframe src="images/Technical Report 2- Driverless Cars.pdf" class="report-iframe" title="Technical Report 2"></iframe>
+            <!-- Report 1: Quantum Computers -->
+            <div class="report-item" onclick="openModal('modal-quantum')">
+                <h3 class="report-title">How Quantum Computers are a Threat to Cyber Security</h3>
+                <div class="iframe-container-preview">
+                    <iframe src="images/How Quantum Computers is a threat to Cyber Security.pdf" class="report-iframe-preview" title="Quantum Report Preview"></iframe>
                 </div>
                 <div class="report-info-container">
-                    <h3 class="report-title">Driverless Cars</h3>
-                    <p>This report covers the development of a machine learning model for image recognition...</p>
+                    <p>This report discusses the development of quantum computing and its potential impact on cybersecurity.</p>
+                    <p class="click-here-text">(Click to read)</p>
                 </div>
             </div>
         
-            <div class="report-item">
-                <div class="iframe-container">
-                    <iframe src="images/Best practices in coding to prevent vulnerabilities and protect against cyber-attacks.pdf" class="report-iframe" title="Technical Report 2"></iframe>
+            <!-- Modal for Quantum Computers -->
+            <div id="modal-quantum" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-quantum')">&times;</span>
+                    <h2>How Quantum Computers are a Threat to Cyber Security</h2>
+                    <div class="iframe-container-modal">
+                        <iframe src="images/How Quantum Computers is a threat to Cyber Security.pdf" class="report-iframe-modal" title="Quantum Report"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report 2: Best Coding Practices -->
+            <div class="report-item" onclick="openModal('modal-coding')">
+                <h3 class="report-title">Best Practices in Coding to Prevent Vulnerabilities</h3>
+                <div class="iframe-container-preview">
+                    <iframe src="images/Best practices in coding to prevent vulnerabilities and protect against cyber-attacks.pdf" class="report-iframe-preview" title="Coding Practices Report Preview"></iframe>
                 </div>
                 <div class="report-info-container">
-                    <h3 class="report-title">Best practices in coding to prevent vulnerabilities and protect against cyber-attacks</h3>
-                    <p>This report covers the development of a machine learning model for image recognition...</p>
+                    <p>This report discusses how best practices in coding can reduce security vulnerabilities</p>
+                    <p class="click-here-text">(Click to read)</p>
+                </div>
+            </div>
+        
+            <!-- Modal for Coding Practices -->
+            <div id="modal-coding" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-coding')">&times;</span>
+                    <h2>Best Practices in Coding to Prevent Vulnerabilities</h2>
+                    <div class="iframe-container-modal">
+                        <iframe src="images/Best practices in coding to prevent vulnerabilities and protect against cyber-attacks.pdf" class="report-iframe-modal" title="Coding Practices Report"></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Report 3: Driverless Cars -->
+            <div class="report-item" onclick="openModal('modal-driverless')">
+                <h3 class="report-title">The Impact Driverless Cars have on Society</h3>
+                <div class="iframe-container-preview">
+                    <iframe src="images/Technical Report 2- Driverless Cars.pdf" class="report-iframe-preview" title="Driverless Cars Report Preview"></iframe>
+                </div>
+                <div class="report-info-container">
+                    <p>This report explores the impact autonomous driving technology has on society</p>
+                    <p class="click-here-text">(Click to read)</p>
+                </div>
+            </div>
+        
+            <!-- Modal for Driverless Cars -->
+            <div id="modal-driverless" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-driverless')">&times;</span>
+                    <h2>Driverless Cars</h2>
+                    <div class="iframe-container-modal">
+                        <iframe src="images/Technical Report 2- Driverless Cars.pdf" class="report-iframe-modal" title="Driverless Cars Report"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-
-
         
-        <section id="reports-blank"></section>
+        <!-- Blank Projects section placeholder for navbar to jump to -->
+        <section id="contact-blank"> </section>
 
-        </section>
-
-        <section id="contact-title-container"> 
-            <div class="reports-title-p1">
-                <p1> I'm very proud of my </p1>
+        <!-- Text divider between sections -->
+        <section id="title-container"> 
+            <div class="title-p1">
+                <p1> Send me an email to view my CV or just to have achat!</p1>
             </div>
 
-            <div class="reports-title">
+            <div class="title">
                 <h1> Contact Me </h1>
             </div>
         </section>
+
+        <!-- Contact me section -->
+        <section id="contact-me">
+           
+            <div class="contact-icon" onclick="toggleContactForm()">
+                <img id="send-email-icon" src="images/send email icon.png" alt="Contact Icon">
+            </div>
         
+            <!-- Overlay that dims the background -->
+            <div id="overlay" class="overlay" onclick="toggleContactForm()"></div>
+        
+            <!-- Contact form that slides up -->
+            <div id="contact-form-container" class="contact-form-container">
+                <span class="close-btn" onclick="toggleContactForm()">&times;</span>
+                <form class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <div id="name-and-email-container">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="name-input" id="name" name="name" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email-input" id="email" name="email" required>
+                        </div>
+                        
+                    </div>
+                    
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message-input" name="message" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <script src="scripts.js"></script>
+
     </body>
 </html>
