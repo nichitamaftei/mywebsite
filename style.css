@@ -134,7 +134,7 @@ body {
   
 .p1 {
     text-align: center;
-    color: grey;
+    color: rgba(211, 211, 211, 0.859);
     font-size: 20px;
 }
   
@@ -336,7 +336,7 @@ body {
     }
 
     .scroll-indicator{
-        bottom: 150px;
+        bottom: 110px;
     }
 
     .p2 {
@@ -378,7 +378,7 @@ body {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 1px;
-    color: grey;
+    color: rgba(211, 211, 211, 0.718);
 }
 
 .about-text {
@@ -542,7 +542,7 @@ body {
 }
 
 .click-here-text {
-    color: rgba(0, 255, 255, 0.6); 
+    color: #B0C4DE;
     text-decoration: none;
 }
 
@@ -867,13 +867,8 @@ body {
     }
 }
 
+/* Contact Page */
 
-/* Contact page */
-
-
-#contact-title-container{
-    margin-top: 130px;
-}
 
 .contact-info-upper-container {
     display: flex;
@@ -882,46 +877,71 @@ body {
     border-radius: 2rem;     
     border: rgb(163, 163, 163) 0.1rem solid;
     background-color: rgb(31, 33, 34);
-    padding: 0.5rem;
-    max-width: 500px; 
+    padding: 1rem;  /* Adjust padding to give more space */
+    max-width: 500px; /* Maintain a max width */
     margin: 0 auto; 
     margin-bottom: 100px;
-    box-shadow:  rgba(173, 216, 230, 0.8); 
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.8); 
+    overflow: hidden; /* Prevent overflow */
 }
 
 .contact-info-upper-container:hover {
     box-shadow: 0 0 10px 3px rgba(173, 216, 230, 1); 
 }
 
-  
 .contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
-    gap: 5px;
+    gap: 10px; /* Space between icon and text */
+    margin: 0.5rem;
+    flex-shrink: 0; /* Prevent shrinking on smaller screens */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
-.words{
+.words {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px; /* Adjust font size */
 }
 
 .contact-icon {
     cursor: default;
 }
 
-.email-icon {
+.email-icon{
     height: 50px;
     width: 50px;
 }
 
-.linkedin-icon {
-    height: 35px;
-    width: 35px;
+.linkedin-icon{
+    height: 40px;
+    width: 40px;
 }
+
+@media (max-width: 640px) {
+    .contact-info-upper-container {
+        max-width: 90%; /* Adjust pill width for smaller screens */
+    }
+
+    .contact-info-container{
+        gap: 5px;
+    }
+
+    .words {
+        font-size: 16px; /* Slightly reduce text size on mobile */
+    }
+
+    .email-icon{
+        height: 40px; /* Reduce icon size on mobile */
+        width: 40px;
+    }
+    .linkedin-icon{
+        height: 30px; /* Reduce icon size on mobile */
+        width: 30px;
+    }
+}
+
   
 /* Footer */
 
