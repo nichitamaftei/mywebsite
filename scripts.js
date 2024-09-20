@@ -29,7 +29,7 @@ function toggleContactForm() {
     overlay.classList.toggle('active');
 }
 
-
+// Function to hide the burger menu icon when on the burger menu
 document.addEventListener('DOMContentLoaded', function () {
     const burgerMenu = document.getElementById('burger-menu');
     const sideMenu = document.getElementById('side-menu');
@@ -46,5 +46,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Function to add the scroll effect
+document.addEventListener('DOMContentLoaded', function() {
 
+    
+    function applyScrollEffect(selector) {
+        const items = document.querySelectorAll(selector);
 
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);  
+                }
+            });
+        }, { threshold: 0.1 });  // Trigger when 10% of the item is visible
+
+        items.forEach(item => observer.observe(item)); 
+    }
+
+    // Apply the scroll effect to different sections
+    applyScrollEffect('.experience-item');       
+    applyScrollEffect('.about-img-container');   
+    applyScrollEffect('.about-text-container');  
+    applyScrollEffect('.project-item');          
+    applyScrollEffect('.report-item');           
+    applyScrollEffect('.contact-info-container');
+
+});

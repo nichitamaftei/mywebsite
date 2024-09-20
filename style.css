@@ -406,12 +406,25 @@ body {
     flex-direction: column;
     color: white;
     width: 400px;
+    opacity: 0;
+    transform: translateY(30px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
 .about-img-container {
     flex: 1; 
     display: flex;
     justify-content: center;
+    opacity: 0;
+    transform: translateY(30px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+
+.about-img-container.show, 
+.about-text-container.show {
+    opacity: 1;
+    transform: translateY(0); 
 }
 
 .about-img-container img {
@@ -497,6 +510,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     color: white;
+    opacity: 0;
+    transform: translateY(30px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.experience-item.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .general-info-container {
@@ -560,6 +581,14 @@ body {
     cursor: pointer; 
     color: white;
     background-color: rgb(31, 33, 34);
+    opacity: 0;  
+    transform: translateY(50px);  
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.project-item.show {
+    opacity: 1;  
+    transform: translateY(0);  
 }
 
 .click-here-text {
@@ -801,6 +830,14 @@ body {
     margin: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     cursor: pointer; 
+    opacity: 0;  
+    transform: translateY(50px);  
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.report-item.show {
+    opacity: 1;  
+    transform: translateY(0);  
 }
 
 .report-item:hover {
@@ -859,11 +896,6 @@ body {
     font-weight: bold;
     color: white;
     cursor: pointer;
-}
-
-
-.close:hover {
-    color: red;
 }
 
 .iframe-container-modal {
@@ -928,6 +960,14 @@ body {
     margin: 0.5rem;
     flex-shrink: 0; 
     white-space: nowrap; 
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.contact-info-container.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .words {
