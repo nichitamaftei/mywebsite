@@ -327,8 +327,16 @@ body {
     .circlepfp-container {
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
-        margin-bottom: 20px;
+        margin: 0 auto;
+        
+    }
+
+    .homepage-text{
+        margin-top: -40px;
+    }
+
+    .scroll-indicator{
+        bottom: 150px;
     }
 
     .p2 {
@@ -587,7 +595,7 @@ body {
 .project-name {
     font-size: 27px;
     font-weight: bold;
-    margin: 10px 0; 
+    margin-bottom: 20px;
 }
 
 .technologies {
@@ -679,16 +687,14 @@ body {
         width: 90%;
         height: 90%;
     }
-}
-
-
-@media (max-width: 640px) {
     .project-item {
         width: 100%; 
         max-width: none; 
     }
+    .model-text{
+        font-size: 13px;
+    }
 }
-
 
 
 /* Report page */
@@ -875,16 +881,16 @@ body {
     align-items: center;    
     border-radius: 2rem;     
     border: rgb(163, 163, 163) 0.1rem solid;
-    background: rgb(163, 163, 163);
+    background-color: rgb(31, 33, 34);
     padding: 0.5rem;
     max-width: 500px; 
     margin: 0 auto; 
     margin-bottom: 100px;
-    box-shadow: 0 0 20px 5px rgba(173, 216, 230, 0.8); 
+    box-shadow:  rgba(173, 216, 230, 0.8); 
 }
 
 .contact-info-upper-container:hover {
-    box-shadow: 0 0 25px 8px rgba(173, 216, 230, 1); 
+    box-shadow: 0 0 10px 3px rgba(173, 216, 230, 1); 
 }
 
   
@@ -894,12 +900,13 @@ body {
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
+    gap: 5px;
 }
 
 .words{
     text-decoration: none;
-    color: black;
-    
+    color: white;
+    font-size: 20px;
 }
 
 .contact-icon {
@@ -909,6 +916,11 @@ body {
 .email-icon {
     height: 50px;
     width: 50px;
+}
+
+.linkedin-icon {
+    height: 35px;
+    width: 35px;
 }
   
 /* Footer */
