@@ -357,6 +357,21 @@ body {
     }
 }
 
+@media (max-width: 640px) {
+    #nick-logo{
+        width: 100px;
+        padding: 2%;
+    }
+
+    .burger-menu {
+        width: 50px; 
+        height: 50px; 
+        
+    }
+}
+
+
+
 
 /* About page */
 
@@ -667,19 +682,19 @@ body {
     position: absolute;
     top: 15px;
     right: 20px;
-    color: #333;
+    color: white;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-}
-
 .modal.show {
     display: flex;
+}
+
+#driving-link{
+    text-decoration: underline;
+    color: lightblue;
 }
 
 @media (max-width: 640px) {
@@ -692,7 +707,11 @@ body {
         max-width: none; 
     }
     .model-text{
-        font-size: 13px;
+        font-size: 14px;
+        margin: 0px;
+    }
+    #paragraph2{
+        margin-top: 10px;
     }
 }
 
@@ -831,7 +850,7 @@ body {
     right: 15px;
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: white;
     cursor: pointer;
 }
 
@@ -877,12 +896,12 @@ body {
     border-radius: 2rem;     
     border: rgb(163, 163, 163) 0.1rem solid;
     background-color: rgb(31, 33, 34);
-    padding: 1rem;  /* Adjust padding to give more space */
-    max-width: 500px; /* Maintain a max width */
+    padding: 1rem;  
+    max-width: 500px; 
     margin: 0 auto; 
     margin-bottom: 100px;
     box-shadow: 0 0 10px rgba(173, 216, 230, 0.8); 
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden; 
 }
 
 .contact-info-upper-container:hover {
@@ -893,16 +912,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px; 
     margin: 0.5rem;
-    flex-shrink: 0; /* Prevent shrinking on smaller screens */
-    white-space: nowrap; /* Prevent text wrapping */
+    flex-shrink: 0; 
+    white-space: nowrap; 
 }
 
 .words {
     text-decoration: none;
     color: white;
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px; 
 }
 
 .contact-icon {
@@ -921,7 +940,7 @@ body {
 
 @media (max-width: 640px) {
     .contact-info-upper-container {
-        max-width: 90%; /* Adjust pill width for smaller screens */
+        max-width: 90%; 
     }
 
     .contact-info-container{
@@ -929,15 +948,15 @@ body {
     }
 
     .words {
-        font-size: 16px; /* Slightly reduce text size on mobile */
+        font-size: 16px; 
     }
 
     .email-icon{
-        height: 40px; /* Reduce icon size on mobile */
+        height: 40px; 
         width: 40px;
     }
     .linkedin-icon{
-        height: 30px; /* Reduce icon size on mobile */
+        height: 30px; 
         width: 30px;
     }
 }
