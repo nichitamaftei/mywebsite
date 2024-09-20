@@ -463,6 +463,12 @@ body {
         margin: 40px;
     }
 }
+@media (max-width: 670px) {
+    .about-text{
+        font-size: 17px;
+    }
+}
+
 
 
 /* Experience page */
