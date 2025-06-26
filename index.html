@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/x-icon">
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
         <meta property="og:title" content="Nichita Maftei Portfolio Website">
         <meta property="og:description" content="A showcase of my projects, skills, and experience. Check out my portfolio!">
         <meta property="og:image" content="https://nichitamaftei.com/images/my website.png"> 
@@ -34,7 +34,7 @@
                         <p class="slash">/></p>
                         <li><a href="#experience-blank"> Experience</a></li>
                         <p class="slash">/></p>
-                        <li><a href="#projects-blank">Projects</a></li>
+                        <li><a href="#fyp-blank">Projects</a></li>
                         <p class="slash">/></p>
                         <li><a href="#reports-blank">Technical Reports</a></li>
                         <p class="slash">/></p>
@@ -124,14 +124,14 @@
 
                     <div class="education"> 
                         <h1> Education </h1>   
-                        <p1> • Computer Science BSc(Hons) Student <br> • A-Levels: Computer Science, Economics, Finance </p1>
+                        <p1> • First Class (1:1) Computer Science BSc(Hons) Graduate  <br> • A-Levels: Computer Science, Economics, Finance </p1>
                     </div>
 
                 </div>
 
                 <div class="about-text">
-                    <p> My name is Nichita Maftei, and I'm passionate about the world of technology and innovation. My journey into tech started in secondary school, where I dived into coding with Visual Basic. As I progressed, I developed a fascination for cloud technology and its rapid emergence. In addition to my computer science studies, I've worked on exciting projects, including a comprehensive Driving Test Theory application built entirely in Python. I'm also honored to have been chosen as an Academic Mentor for first & second year students.</p>
-                    
+                    <p>Hello! My journey into tech began in secondary school where I first discovered coding through Visual Basic. Over time my interest in the tech space grew, particularly in the rapidly evolving world of cloud technologies. I’ve recently graduated with a First Class Honours degree in Computer Science, and along the way I’ve built a range of exciting projects. I'm also proud to have been selected to work as an Academic Mentor where I supported first and second year computer science students throughout their modules.</p>
+
                 </div>
             </div>
         </section>
@@ -165,7 +165,7 @@
                 </div>
         
                 <div class="date-container">
-                    <p> Sep 2024 - 🟢 Present </p>
+                    <p> Sep 2024 - July 2025 </p>
                 </div>
             </div>
 
@@ -197,7 +197,7 @@
                 </div>
         
                 <div class="date-container">
-                    <p> Sep 2023 - April 2024 </p>
+                    <p> Sep 2023 - July 2024 </p>
                 </div>
             </div>
 
@@ -216,23 +216,66 @@
                     <p> May 2023 - Aug 2023 </p>
                 </div>
             </div>
+        </section>
 
-            <div class="experience-item">
+        <!-- Blank Reports section placeholder for navbar to jump to -->
+        <section id="fyp-blank"> </section>
+
+        <!-- Text divider between sections -->
+        <section id="title-container"> 
+            <div class="title-p1">
+                <p1> My </p1>
+            </div>
+
+            <div class="title">
+                <h1> Final Year Project </h1>
+            </div>
+        </section>
+
+
+        <!-- FYP section -->
+        <section id="fyp">
+
+            <div class="project-item" id="fyp-project" onclick="openModal('modal-fyp')">
+                <h3 class="project-name">Visualising MS Teams Call Flows</h3>
+                <div class="image-container" id="fyp-img-container" class="image-container">
+                    <img class="project-img" src="images/fyp website.png" alt="Final Year Project Website Screenshot">
+                </div>
+                <div class="project-info-container">
+                    <div class="technologies">
+                        <span class="tech-button">HTML</span>
+                        <span class="tech-button">CSS</span>
+                        <span class="tech-button">SQL</span>
+                        <span class="tech-button">PHP</span>
+                        <span class="tech-button">JavaScript</span>
+                    </div>
+                </div>
                 <div>
-                    <img class="logo-img" src="images/the advantage travel partnership logo.png" alt="">
+                    <p class="click-here-text">(Click for more info) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
-
-                <div class="general-info-container">
-                    <h3> The Advantage Travel Partnership </h3>
-                    <p> I.T Assistant </p>
-                    <p> London, United Kingdom • On-Site </p>
-                </div>
+            </div>
         
-                <div class="date-container">
-                    <p> June 2019 - June 2019 </p>
+            <!-- Modal for FYP Website -->
+            <div id="modal-fyp" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-fyp')">&times;</span>
+                    <h2 class="model-title">Visualising MS Teams Call Flows</h2>
+                    <h3 id="modal-fyplink">
+                        <a href="http://nickproject.scienceontheweb.net/" target="_blank">
+                            &rarr; Click here to visit and explore the project! &larr;
+                        </a>
+                    </h3>
+                    <img src="images/fyp website.png" alt="Final Year Project Screenshot" class="modal-img">
+                    <p class="model-text">For my Final Year University Project, I decided to tackle a problem that I noticed during an experience I had in my summer internship. I noticed that monitoring and analysing Microsoft Teams call flows was both time consuming and unclear. This inspired me to develop a web-based tool that visualises Teams call data. This makes it easier for IT departments or Heads of Departments to trace and better understand their communication workflows.</p>
+                    <p class="model-text">Throughout the course of the project, I meticulously involved relevant stakeholders from the Analysis phase all the way through to the Testing phase.</p>
+                    <p class="model-text">The developed tool features an interactive front-end using HTML, CSS, JavaScript, and the JointJS library, alongside a PHP backend with a MySQL database. The result is a Proof-of-concept system that supports dynamic filtering, call path visualisation, and user-friendly data interpretation, all designed with real organisational use in mind.</p>
+                    <p class="model-text">This project ended up being the 2nd best in my Cohort which I’m incredibly proud of!</p>
                 </div>
             </div>
         </section>
+
+
+
 
         <!-- Blank Projects section placeholder for navbar to jump to -->
         <section id="projects-blank"> </section> 
@@ -240,7 +283,7 @@
         <!-- Text divider between sections -->
         <section id="title-container"> 
             <div class="title-p1">
-                <p1> Some of my beloved </p1>
+                <p1> Some of my other beloved </p1>
             </div>
 
             <div class="title">
@@ -267,7 +310,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="click-here-text">(Click for more info) </p>
+                    <p class="click-here-text">(Click for more info) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
             </div>
         
@@ -295,7 +338,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="click-here-text">(Click for more info) </p>
+                    <p class="click-here-text">(Click for more info) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
             </div>
         
@@ -325,7 +368,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="click-here-text">(Click for more info) </p>
+                    <p class="click-here-text">(Click for more info) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
             </div>
         
@@ -353,7 +396,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="click-here-text"> (Click to view more info)</p>
+                    <p class="click-here-text"> (Click to view more info) <i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
 
                 </div>
             </div>
@@ -369,8 +412,8 @@
                 </div>
             </div>
         </section>
-        
-        
+
+
         <!-- Blank Reports section placeholder for navbar to jump to -->
         <section id="reports-blank"> </section>
 
@@ -396,7 +439,7 @@
                 </div>
                 <div class="report-info-container">
                     <p>This report discusses the development of quantum computing and its potential impact on cybersecurity.</p>
-                    <p class="click-here-text">(Click to read)</p>
+                    <p class="click-here-text">(Click to read) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
             </div>
         
@@ -419,7 +462,7 @@
                 </div>
                 <div class="report-info-container">
                     <p>This report discusses how best practices in coding can reduce security vulnerabilities</p>
-                    <p class="click-here-text">(Click to read)</p>
+                    <p class="click-here-text">(Click to read) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
             </div>
         
@@ -442,7 +485,7 @@
                 </div>
                 <div class="report-info-container">
                     <p>This report explores the impact autonomous driving technology has on society</p>
-                    <p class="click-here-text">(Click to read)</p>
+                    <p class="click-here-text">(Click to read) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
                 </div>
             </div>
         

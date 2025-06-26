@@ -586,6 +586,18 @@ body {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
+#fyp-project{
+    max-width: 900px; 
+    min-height: 600px;
+    margin: 0px auto 50px auto;
+}
+
+#fyp-img-container{
+    max-width: 100%;
+    height: 70%;
+    object-fit: cover; 
+}
+
 .project-item.show {
     opacity: 1;  
     transform: translateY(0);  
@@ -605,7 +617,13 @@ body {
 .model-title{
     text-align: center;
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+#modal-fyplink{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 .model-text{
