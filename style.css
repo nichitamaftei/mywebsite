@@ -606,6 +606,7 @@ body {
 .click-here-text {
     color: #B0C4DE;
     text-decoration: none;
+    font-size: 20px;
 }
 
 /* Hover glow effect */
@@ -622,8 +623,12 @@ body {
 
 #modal-fyplink{
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 15px;
+}
+
+#fyp-text-link{
+    color: #3A63BB;
 }
 
 .model-text{
@@ -898,7 +903,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 80%;
-    max-width: 800px;
+    max-width: 950px;
     height: 80%; 
     overflow-y: auto; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
