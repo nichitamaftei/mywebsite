@@ -68,7 +68,7 @@
                 <div class="homepage-text">
                     <p class="p1">Hello, I'm</p>
                     <h1 class="homepage-title">Nichita Maftei</h1>
-                    <p class="p2">Computer Science student at Kingston University</p>
+                    <p class="p2">KUL Computer Science Graduate (1:1)</p>
                     <div class="button-container">
                    
                     <button class="btn btn-contact" onclick="location.href='#contact-blank'"> Contact Me </button>
@@ -295,7 +295,35 @@
         <!-- Projects section -->
         <section id="projects">
 
-            <!-- Project 1: Cheese Website -->
+            <!-- Project 1: Mars Python Script -->
+            <div class="project-item" onclick="openModal('modal-mars')">
+                <h3 class="project-name">Mars Weather Tracker</h3>
+                <div class="image-container" class="image-container">
+                    <img class="project-img" src="images/mars_script.png" alt="Python script Screenshot">
+                </div>
+                <div class="project-info-container">
+                    <div class="technologies">
+                        <span class="tech-button">Python</span>
+                        <span class="tech-button">Docker</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="click-here-text">(Click for more info) <i class="fa-solid fa-up-right-and-down-left-from-center"></i> </p>
+                </div>
+            </div>
+        
+            <!-- Modal for Mars Python Script-->
+            <div id="modal-mars" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-mars')">&times;</span>
+                    <h2 class="model-title">Mars Weather Tracker</h2>
+                    <img src="images/mars_script.png" alt="Python Script Screenshot" class="modal-img">
+                    <p class="model-text">I wanted to challenge myself beyond simple coding exercises, so I set out to build something that would sharpen my Python scripting skills whilst working with real world data. That curiosity led me to NASA’s InSight Mars lander RESTful API which provides live weather readings from Mars. Using the data retrieved from NASA's API, I created a script that lists available Sols (Martian days) with their Earth dates, showing detailed temperature statistics (average, minimum, and maximum) and even visualising the last seven Sols in a chart using Matplotlib.</p>
+                    <p id="paragraph2" class="model-text">Along the way I practised areas within Python such as API requests, file handling, and data visualisation. I also took the opportunity to explore Docker by making the script container ready so it can run consistently in different environments. This project gave me both a fun way to experiment with planetary data and a practical exercise in applying core programming and DevOps concepts. You can find a link to this repo <a href="https://github.com/nichitamaftei/mars-weather-report" style="color: #3A63BB;">here.</a> </p> 
+                </div>
+            </div>
+
+            <!-- Project 2: Cheese Website -->
             <div class="project-item" onclick="openModal('modal-cheese')">
                 <h3 class="project-name">Cheese Website</h3>
                 <div class="image-container" class="image-container">
@@ -326,7 +354,7 @@
                 </div>
             </div>
 
-            <!-- Project 2: Driving Theory Test App -->
+            <!-- Project 3: Driving Theory Test App -->
             <div class="project-item" onclick="openModal('modal-driving')">
                 <h3 class="project-name">Driving Theory Test App</h3>
                 <div class="image-container">
@@ -355,7 +383,7 @@
             </div>
 
 
-            <!-- Project 3: My Portfolio Website -->
+            <!-- Project 4: My Portfolio Website -->
             <div class="project-item" onclick="openModal('modal-portfolio')">
                 <h3 class="project-name">My Portfolio Website</h3>
                 <div class="image-container">
@@ -384,7 +412,7 @@
                 </div>
             </div>
         
-            <!-- Project 4: Swing CV Builder -->
+            <!-- Project 5: Swing CV Builder -->
             <div class="project-item" onclick="openModal('modal-cv')">
                 <h3 class="project-name">Swing CV Builder</h3>
                 <div class="image-container">
@@ -530,7 +558,7 @@
         </section>
 
         <footer>
-            <p>Copyright &#169; 2024 Nichita Maftei. All Rights Reserved.</p>
+            <p>Copyright &#169; 2025 Nichita Maftei. All Rights Reserved.</p>
         </footer>
 
         <script src="scripts.js"></script>
