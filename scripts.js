@@ -72,5 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
     applyScrollEffect('.project-item');          
     applyScrollEffect('.report-item');           
     applyScrollEffect('.contact-info-container');
+     applyScrollEffect('.trophy-card');
 
 });
